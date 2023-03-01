@@ -84,7 +84,7 @@ with lf:
     sd=st.date_input("Starting Date",value=dt.date(2016, 9, 15),min_value=dt.date(2016, 9, 15),max_value=dt.date(2023, 2, 28))
     st.write(sd)
 with rt:
-    ed=st.date_input("Starting Date",value=dt.date(2023, 2, 28),min_value=sd,max_value=dt.date(2023, 2, 28))
+    ed=st.date_input("End Date",value=dt.date(2023, 2, 28),min_value=sd,max_value=dt.date(2023, 2, 28))
     st.write(ed)
 
 mask = (df['date'].dt.date >= sd) & (df['date'].dt.date <= ed)
@@ -93,7 +93,7 @@ df2 = df.loc[mask]
 lf,rt=st.columns((4,2))
 with lf:
     df2["day"]=df2["timestamp"].dt.strftime("%A")
-    st.dataframe(df2[["Hashtags","commentsCount","likesCount","timestamp","day"]])#dataframe according to the period
+    st.dataframe(df2[["Hashtags","url","commentsCount","likesCount","timestamp","day"]])#dataframe according to the period
 with rt:
     l, r = st.columns((2, 2))
     with l:
