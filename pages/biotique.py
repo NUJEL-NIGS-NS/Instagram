@@ -9,7 +9,7 @@ import datetime as dt
 
 #Data import
 
-df = pd.read_csv(r"C:\Users\user\Desktop\intern\instagram\biotique_world\dfbiotique.csv")
+df = pd.read_csv("files\dfbiotique.csv")
 #hash tag list
 hlist=[]
 def edit(x):
