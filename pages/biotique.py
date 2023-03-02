@@ -8,8 +8,8 @@ import datetime as dt
 
 
 #Data import
-
-df = pd.read_csv("files\dfbiotique.csv")
+url=https://raw.githubusercontent.com/NUJEL-NIGS-NS/Instagram/master/files/dfbiotique.csv
+df = pd.read_csv(url,index_col=0)
 #hash tag list
 hlist=[]
 def edit(x):
