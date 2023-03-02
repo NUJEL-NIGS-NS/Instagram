@@ -9,7 +9,7 @@ import datetime as dt
 
 #Data import
 
-df = pd.read_csv(r"C:\Users\user\Desktop\intern\instagram\biotique_world\dfbiotique.csv")
+df = pd.read_csv(r"C:\Users\user\Desktop\intern\instagram\mamaearth\dfmamaearth.csv")
 #hash tag list
 hlist=[]
 def edit(x):
@@ -32,7 +32,7 @@ for i in hlist:
 with open("style.css") as f:
     st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
 
-st.title("biotique_world Instagram Analysis")
+st.title("mama earth Instagram Analysis")
 st.set_option('deprecation.showPyplotGlobalUse', False)
 #first column
 lf,rt=st.columns((4,2))
@@ -79,7 +79,7 @@ st.plotly_chart(fig,use_container_width=True)
 
 lf,rt=st.columns((2,2))
 with lf:
-    sd=st.date_input("Starting Date",value=dt.date(2014, 4, 16),min_value=dt.date(2014, 4, 7),max_value=dt.date(2023, 2, 28))
+    sd=st.date_input("Starting Date",value=dt.date(2020, 9, 8),min_value=dt.date(2020, 9, 8),max_value=dt.date(2023, 2, 28))
     st.write(sd)
 with rt:
     ed=st.date_input("End Date",value=dt.date(2023, 2, 28),min_value=sd,max_value=dt.date(2023, 2, 28))

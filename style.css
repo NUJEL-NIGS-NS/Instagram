@@ -4,6 +4,30 @@
     
 }
 .glideDataEditor{
+    
     border: 2px solid rebeccapurple;
 
+}
+.css-6qob1r{
+    background-image:url("https://images.unsplash.com/photo-1611162618758-2a29a995354b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80");
+    
+    background-color: fuchsia;
+}
+.e1fqkh3o6{
+    background-color:rgba(0, 0,0,0);
+    
+}
+
+.e1fqkh3o6:hover{
+    background-color: red;
+    
+}
+.egzxvld4{
+    background-image: url(https://images.unsplash.com/photo-1603566234966-63aff3736a36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+}
+.e8zbici2{
+    background-color: rgba(0,0,0,0);
+}
+.egzxvld1{
+    display: none;
 }
